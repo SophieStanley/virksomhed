@@ -1,0 +1,48 @@
+img {
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2,
+p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.info-box {
+  margin: 20px;
+}
+.kasse {
+  background-color: #899d94;
+  margin: 20px;
+  padding: 20px;
+}
+
+.knap {
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  background-color: #ffffff;
+  border: 4px solid #899d94;
+  margin: 20px;
+  padding: 20px 30px;
+}
+
+@media (min-width: 800px) {
+  .info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .kasse {
+    background-color: #899d94;
+    margin: 20px;
+    padding: 40px;
+  }
+}
