@@ -181,9 +181,104 @@ main .lægerne-sektion {
   text-decoration-thickness: 2px;
 }
 .tilbud-tekst {
+  text-align: left;
   margin: 0;
   line-height: 1.5;
   font-size: 12px;
   color: #333;
   font-family: "inter", sans-serif;
+}
+@media (min-width: 800px) {
+  main section {
+    padding: 4rem 2rem;
+  }
+  .lægerne {
+    gap: 0.1rem;
+  }
+  .lægerne-title {
+    font-size: 50px;
+  }
+  .peter-kort-figur,
+  .elisabeth-kort-figur {
+    width: 200px;
+  }
+  .peter-navn,
+  .elisabeth-navn {
+    font-size: 18px;
+  }
+  .peter-text,
+  .elisabeth-text {
+    font-size: 15px;
+    max-width: 320px;
+  }
+  .behandling-title {
+    font-size: 35px;
+  }
+  .behandling-undertitle {
+    font-size: 20px;
+  }
+  .behandling-liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .behandling-liste-item:last-child {
+    grid-column: auto;
+  }
+  .behandling-term {
+    font-size: 18px;
+  }
+  .behandling-desc {
+    font-size: 15px;
+  }
+  .tilbud-title {
+    font-size: 35px;
+  }
+  .tilbud-liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .tilbud-article {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+  .tilbud-article:nth-child(1)::after,
+  .tilbud-article:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 3.2rem;
+    right: -1.5rem;
+    width: 2px;
+    height: 180px;
+    background: #899d94;
+    opacity: 0.8;
+  }
+  .tilbud-undertitle {
+    text-align: center;
+    margin: 0 0 0.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+  }
+  .tilbud-figur {
+    margin: 0 auto;
+    width: 210px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border: 2px solid #899d94;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .tilbud-undertitle {
+    font-size: 18px;
+  }
+  .tilbud-tekst {
+    font-size: 15px;
+    text-align: center;
+  }
 }
