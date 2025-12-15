@@ -1,0 +1,43 @@
+img {
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #899d94;
+}
+div {
+  margin: 20px;
+  text-align: center;
+}
+
+.indgangen {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 60%;
+}
+
+@media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  div {
+    grid-column: 1/2;
+  }
+  .indgangen {
+    max-width: 90%;
+    grid-column: 2/3;
+    grid-row: 1/6;
+  }
+  div {
+    margin: 0px 20px;
+    padding: 0px 50px;
+  }
+  .kort {
+    grid-column: 2/3;
+  }
+}
