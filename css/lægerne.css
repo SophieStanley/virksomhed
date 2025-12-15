@@ -1,0 +1,167 @@
+* {
+  background-color: #ffffff;
+}
+main section {
+  padding: 2.75rem 1.25rem;
+}
+main .lægerne-sektion {
+  border-bottom: 1px solid #000;
+  padding-bottom: 2.25rem;
+}
+.lægerne-indre {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.lægerne-title {
+  text-align: center;
+  color: #899d94;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+}
+.lægerne {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+.peter-kort,
+.elisabeth-kort {
+  text-align: center;
+}
+.peter-kort-figur,
+.elisabeth-kort-figur {
+  margin: 0 auto 1.5rem;
+  width: clamp(95px, 26vw, 135px);
+  aspect-ratio: 1/1;
+  border: 2px solid #899d94;
+  overflow: hidden;
+}
+.peter-foto,
+.elisabeth-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.peter-navn,
+.elisabeth-navn {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.peter-text,
+.elisabeth-text {
+  margin: 0 auto;
+  max-width: 270px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.læger-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.læger-kontakt {
+  display: inline-block;
+  background: #899d94;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+}
+.behandling-title {
+  text-align: center;
+  color: #899d94;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+}
+.behandling-undertitle {
+  text-align: center;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: o o 2rem;
+  margin-bottom: 2.5rem;
+}
+.behandling-liste {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 1.5rem;
+}
+.behandling-liste-item {
+  margin: 0;
+  text-align: center;
+}
+.behandling-term {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: underline solid #899d94;
+  text-underline-offset: auto;
+  text-decoration-thickness: 2px;
+}
+
+.behandling-desc {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.behandling-liste-item:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 520px;
+}
+.tilbud-indre {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.tilbud-title {
+  text-align: center;
+  color: #899d94;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+  margin-bottom: 2rem;
+}
+.tilbud-liste {
+  display: grid;
+  gap: 2rem;
+}
+.tilbud-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+.tilbud-figur {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  place-items: inherit;
+}
+.tilbud-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.tilbud-undertitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 1.5rem;
+  text-decoration: underline solid #899d94;
+  text-underline-offset: auto;
+  text-decoration-thickness: 2px;
+}
+.tilbud-text {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
