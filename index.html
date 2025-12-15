@@ -4,54 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body>
-    <header>
-      <h1>Hudklinikken Østerport</h1>
-      <nav>
+    <header class="site-header">
+      <a class="logo" href="index.html">HUDKLINIKKEN ØSTERPORT</a>
+      <nav class="header-nav">
         <ul class="menu">
-          <li><a href="index.html">Forside</a></li>
+          <li class="forsidelink"><a href="index.html">Forside</a></li>
           <li><a href="lægerne.html">Læger og behandling</a></li>
           <li><a href="håndbog.html">Patienthåndbogen</a></li>
           <li><a href="praktisk.html">Praktisk info</a></li>
-          <li><a href="kontakt.html">Kontakt og tidsbestilling</a></li>
+          <li><a class="kontaktbtn" href="kontakt.html">Kontakt og tidsbestilling</a></li>
         </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
+        <button class="menu-button">Menu</button>
       </nav>
     </header>
     <main>
       <section class="herobilledeforside">
         <img src="images/forsidehero.webp" alt="forsidehero" />
-        <h2>Velkommen til</h2>
-        <h1>Hudklinikken Østerport</h1>
+        <div class="Billedtekst">
+          <h2>Velkommen til</h2>
+          <h1>
+            Hudklinikken <br />
+            Østerport
+          </h1>
+        </div>
       </section>
-      <section>
-        <button>Lægerne og behandling</button>
-        <button>Praktisk info</button>
-        <button>Book tid</button>
-      </section>
-      <section>
-        <h3>HVEM ER VI?</h3>
-        <p>
-          Hudklinikken Østerport er en speciallægeklinik i København Ø, der drives af hudlægerne Peter Nymann og Elisabeth Held sammen med et team af specialuddannede sygeplejersker og sekretærer. Klinikken behandler alle almindelige hudsygdomme,
-          herunder eksem, psoriasis, acne, rosacea, hudinfektioner, udslæt og hår- og negleproblemer. De tilbyder desuden modermærkekontrol, vurdering af hudkræft og forstadier samt behandlinger som lysbehandling (UVB TL01), fotodynamisk terapi og
-          iontoforese. Klinikken modtager både patienter med henvisning og selvbetalere og ligger få minutters gang fra Østerport Station.
-        </p>
-        <img src="images/lægerne.webp" alt="lægerne" />
+      <section class="ordersection">
+        <section class="button-section">
+          <button class="btn">Læger og<br />behandlinger</button>
+          <button class="btn">Praktisk info</button>
+          <button class="btn primary">Book tid</button>
+        </section>
+        <section class="content-section">
+          <h3>HVEM ER VI?</h3>
+          <p>
+            Hudklinikken Østerport er en speciallægeklinik i København Ø, der drives af hudlægerne Peter Nymann og Elisabeth Held sammen med et team af specialuddannede sygeplejersker og sekretærer. Vores klinik behandler alle almindelige
+            hudsygdomme, herunder eksem, psoriasis, acne, rosacea, hudinfektioner, udslæt og hår- og negleproblemer. <br />
+            <br />Vi tilbyder desuden modermærkekontrol, vurdering af hudkræft og forstadier samt behandlinger som lysbehandling (UVB TL01), fotodynamisk terapi og iontoforese. Klinikken modtager både patienter med henvisning og selvbetalere og
+            ligger få minutters gang fra Østerport Station.
+          </p>
+          <img class="billede" src="images/lægerne.webp" alt="lægerne" />
+        </section>
       </section>
     </main>
 
     <footer>
-      <div>
+      <div class="footer-top-wrapper">
         <div class="footer-top">
-          <div class="hudklinikkenøsterport">
+          <div class="hudklinikken-osterport">
             <h4>Hudklinikken Østerport</h4>
-            <p>Telefon: 35 10 25 20 Mail: hudklinik.osterport@gmail.com Kristianiagade 8, 2.sal, 2100 København Ø</p>
+            <p>Telefon: 35 10 25 20</p>
+            <p>Mail: hudklinik.osterport@gmail.com</p>
+            <p>Kristianiagade 8, 2.sal</p>
+            <p>2100 København Ø</p>
           </div>
 
           <div class="genveje">
@@ -61,10 +70,13 @@
               <li><a href="lægerne.html">Behandlinger</a></li>
             </ul>
           </div>
-          <div class="åbningstider">
+
+          <div class="abningstider">
             <h4>Åbningstider</h4>
-            <p>Mandag - torsdag 9-16 <br /><br />Fredag 9-13</p>
+            <p>Mandag - torsdag 9-16</p>
+            <p>Fredag 9-13</p>
           </div>
+
           <div class="telefontider">
             <h4>Telefontider</h4>
             <p>Mandag - fredag 9-12</p>
@@ -73,7 +85,10 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2025 Hudklinikken Østerport</p>
+        <p>
+          Copyright © 2025. All rights reserved.<br />
+          Powered by gruppe 8
+        </p>
       </div>
     </footer>
   </body>
