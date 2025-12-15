@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -5,6 +10,7 @@ img {
 h1 {
   text-align: center;
   color: #899d94;
+  margin: 20px;
 }
 div {
   margin: 20px;
