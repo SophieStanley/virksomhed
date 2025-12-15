@@ -15,9 +15,10 @@ main .lægerne-sektion {
 .lægerne-title {
   text-align: center;
   color: #899d94;
-  font-size: 1.5rem;
+  font-size: 35px;
   font-weight: 600;
-  margin: 0 0 1.5rem;
+  font-family: "Aperto", SemiBold;
+  margin-bottom: 25px;
 }
 .lægerne {
   display: grid;
@@ -46,16 +47,22 @@ main .lægerne-sektion {
 }
 .peter-navn,
 .elisabeth-navn {
-  margin: 0.25rem 0 0.5rem;
-  font-size: 1rem;
-  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
 }
 .peter-text,
 .elisabeth-text {
   margin: 0 auto;
   max-width: 270px;
-  font-size: 1rem;
+  font-size: 12px;
   line-height: 1.5;
+  font-family: "inter", sans-serif;
+  color: #333;
 }
 .læger-cta {
   display: flex;
@@ -70,21 +77,24 @@ main .lægerne-sektion {
   border-radius: 999px;
   padding: 0.8rem 1.5rem;
   font-weight: 600;
+  font-family: "inter", sans-serif;
 }
 .behandling-title {
   text-align: center;
   color: #899d94;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 500;
   margin: 0 0 1.5rem;
+  font-family: "inter", sans-serif;
 }
 .behandling-undertitle {
   text-align: center;
-  color: #000;
-  font-size: 1rem;
+  color: #333;
+  font-size: 14px;
   font-weight: 600;
-  margin: o o 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 25px;
+  font-family: "inter", sans-serif;
+  line-height: 1.5;
 }
 .behandling-liste {
   margin: 0;
@@ -99,8 +109,11 @@ main .lægerne-sektion {
 }
 .behandling-term {
   margin: 0;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  font-family: "inter", sans-serif;
+  line-height: 1.5;
   text-decoration: underline solid #899d94;
   text-underline-offset: auto;
   text-decoration-thickness: 2px;
@@ -109,7 +122,9 @@ main .lægerne-sektion {
 .behandling-desc {
   margin: 0;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 12px;
+  color: #333;
+  font-family: "inter", sans-serif;
 }
 .behandling-liste-item:last-child {
   grid-column: 1 / -1;
@@ -123,10 +138,11 @@ main .lægerne-sektion {
 .tilbud-title {
   text-align: center;
   color: #899d94;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 0 0 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-family: "inter", sans-serif;
+  line-height: 1.5;
 }
 .tilbud-liste {
   display: grid;
@@ -142,6 +158,7 @@ main .lægerne-sektion {
   margin: 0;
   width: 100%;
   height: 100%;
+  border: 2px solid #899d94;
   overflow: hidden;
   place-items: inherit;
 }
@@ -152,16 +169,21 @@ main .lægerne-sektion {
   display: block;
 }
 .tilbud-undertitle {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
   margin-top: 1.5rem;
+  color: #333;
+  font-family: "inter", sans-serif;
+  line-height: 1.5;
   text-decoration: underline solid #899d94;
   text-underline-offset: auto;
   text-decoration-thickness: 2px;
 }
-.tilbud-text {
+.tilbud-tekst {
   margin: 0;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 12px;
+  color: #333;
+  font-family: "inter", sans-serif;
 }
