@@ -98,6 +98,7 @@ img {
 @media (width >= 800px) {
   .Billedtekst h1 {
     font-size: 110px;
+    font-weight: 500;
   }
 
   .Billedtekst h2 {
