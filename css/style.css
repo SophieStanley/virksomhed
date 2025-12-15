@@ -1,3 +1,13 @@
+h3,
+h2 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
 /*header*/
 .site-header {
   display: flex;
@@ -141,7 +151,7 @@ footer a {
     color: black;
   }
 
-  .kontaktbtn {
+  .header-nav a.kontaktbtn {
     width: 100%;
     max-width: 280px;
     padding: 14px 30px;
