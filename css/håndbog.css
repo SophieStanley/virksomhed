@@ -1,0 +1,205 @@
+/* GENEREL STYLING */
+ul {
+  list-style: inside;
+  padding: 1em;
+  margin: 1em;
+  display: grid;
+  gap: 0.5rlh;
+  background-color: #8fa59a;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 2rlh 0;
+  place-self: center;
+}
+h1,
+h2,
+h3,
+p {
+  line-height: 1.5;
+  place-self: center;
+  padding: 1em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* FORMS CSS */
+/* Generelle styles */
+input {
+  border: 1px solid #000;
+  padding: 0.25rlh;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px #0001;
+  background-color: #fff;
+}
+
+button {
+  border: 1px solid #8fa59a;
+  background-color: #8fa59a;
+  color: #fff;
+  border-radius: 35px;
+  padding: 0.25rlh 0.5rlh;
+  cursor: pointer;
+}
+
+.error-message {
+  color: darkred;
+}
+
+/* Form layout */
+form {
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+  accent-color: rgb(255, 20, 20);
+  background-color: light-dark(#fff, #4e576a);
+  border-radius: 10px;
+}
+.form-group {
+  display: grid;
+  gap: 0.1rlh;
+}
+
+label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 0.25rlh;
+  justify-self: start;
+}
+
+/* Pseudo-classes */
+:focus-visible {
+  /* virker til både knapper og input-felter, select, textarea, links mm. */
+  outline: 1px solid lightslategray;
+  outline-offset: 1px;
+}
+.error-message {
+  display: none;
+}
+/* Hover-styles */
+button:hover {
+  background: rgb(42, 108, 48);
+}
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: 0.98;
+}
+
+/* Valideringsregler */
+/* Tilføj stjerne til labels */
+.form-group:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+/* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
+.form-group:has(:user-invalid) {
+  input {
+    outline: 3px solid #f005;
+    border-color: darkred;
+  }
+  /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
+  .error-message {
+    display: block;
+  }
+}
+
+textarea {
+  background-color: #fff;
+  border-color: #000;
+  border-radius: 6px;
+}
+
+#id-delivery {
+  background-color: #fff;
+}
+
+.output div {
+  background: #f5f5f5;
+  padding: 1rlh;
+  border-radius: 6px;
+  display: grid;
+  gap: 0.5rlh;
+}
+
+@media (min-width: 900px) {
+  /* CSS til store skærme */
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .link_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .link_grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+    background-color: transparent;
+  }
+
+  .link_grid li {
+    background-color: #8fa59a;
+    border-radius: 999px;
+  }
+
+  .link_grid li a {
+    display: block;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    transition: opacity 0.2s ease;
+    font-size: 0.9rem;
+  }
+
+  .link_grid li a:hover {
+    opacity: 0.8;
+  }
+
+  /* Spørgsmål sektion */
+  .qa-text {
+    text-align: center;
+    margin: 3rem 0 2rem;
+  }
+
+  .qa-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin: 2rem 0;
+  }
+
+  .qa-image {
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .qa-form {
+    padding: 0;
+  }
+
+  .qa-form form {
+    max-width: 500px;
+  }
+}
