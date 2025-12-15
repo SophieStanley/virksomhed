@@ -4,7 +4,14 @@ h2 {
   font-weight: 400;
   letter-spacing: 2px;
   margin-bottom: 25px;
-  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
+main p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: center;
   font-family: "Inter", sans-serif;
 }
 
