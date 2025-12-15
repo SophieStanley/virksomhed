@@ -1,0 +1,172 @@
+/*header*/
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Logo */
+.logo {
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin: 0;
+  font-family: "Aperto SemiBold";
+  color: black;
+}
+
+.herobilledeforside h1 {
+  font-family: "Aperto SemiBold";
+  color: #8d9a92;
+}
+
+.herobilledeforside h2 {
+  font-family: "Aperto SemiBold";
+  color: #8d9a92;
+}
+
+/* Navigation */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: none; /* Hidden on desktop per screenshot */
+}
+
+/* Menu Text Button */
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #7d8a83;
+  cursor: pointer;
+  padding: 0;
+  border-bottom: 1px solid #7d8a83;
+}
+
+footer {
+  background-color: #8d9a92; /* grøn/grå tone som i billedet */
+  color: #fff;
+  padding: 60px 40px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+footer h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer p,
+footer li,
+footer a {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr; /* <- only one column */
+  gap: 35px;
+}
+
+.footer-top ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-top li a:hover {
+  text-decoration: underline;
+}
+
+/* Tykkere spacing mellem afsnittene */
+.hudklinikkenøsterport p {
+  white-space: pre-line; /* Gør tekst opdelt som i billedet */
+}
+
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 20px;
+  margin-top: 40px;
+  text-align: left;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+}
+
+@media (width >= 800px) {
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Aperto SemiBold";
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-button,
+  .forsidelink {
+    display: none; /* Hidden on desktop per screenshot */
+  }
+  .menu {
+    display: flex; /* Visible on desktop */
+    gap: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: black;
+  }
+
+  .kontaktbtn {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 30px;
+    border: 1px solid #8d9a92;
+    background-color: #8d9a92;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+  }
+
+  .kontaktbtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
