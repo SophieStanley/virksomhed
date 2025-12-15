@@ -98,7 +98,7 @@ button:active {
 /* Tilføj stjerne til labels */
 .form-group:has(:required) {
   label::after {
-    content: " *";
+    content: "*";
     color: red;
   }
 }
