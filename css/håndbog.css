@@ -23,10 +23,17 @@ main p {
   place-self: center;
   padding-bottom: 0.5em;
 }
+
 h2,
 h3,
 p {
   font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  color: #000000;
 }
 
 a {

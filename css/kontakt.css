@@ -9,8 +9,12 @@ img {
 
 h1 {
   text-align: center;
-  color: #899d94;
+  color: #000000;
   margin: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  padding-top: 40px;
 }
 div {
   margin: 20px;
@@ -24,6 +28,10 @@ div {
   margin-top: 20px;
   margin-bottom: 20px;
   max-width: 60%;
+}
+
+.kort {
+  padding: 50px;
 }
 
 @media (min-width: 800px) {
