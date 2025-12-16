@@ -12,10 +12,9 @@ main .lægerne-sektion {
 .lægerne-title {
   text-align: center;
   color: #899d94;
-  font-size: 35px;
-  font-weight: 600;
-  font-family: "Aperto", SemiBold;
-  margin-bottom: 25px;
+  font-weight: 200;
+  font-family: "inter", sans-serif;
+  padding: 20px;
 }
 .lægerne {
   display: grid;
