@@ -5,7 +5,7 @@
   margin: 1em;
   display: grid;
   gap: 0.5rlh;
-  background-color: #8fa59a;
+  background-color: #8d9a92;
   color: white;
 }
 
@@ -16,11 +16,12 @@ img {
   place-self: center;
 }
 h1,
-h2 h3,
-p {
+h2,
+h3,
+main p {
   line-height: 1.5;
   place-self: center;
-  padding: 1em;
+  padding-bottom: 0.5em;
 }
 h2,
 h3,
@@ -49,8 +50,8 @@ input {
 }
 
 button {
-  border: 1px solid #8fa59a;
-  background-color: #8fa59a;
+  border: 1px solid #8d9a92;
+  background-color: #8d9a92;
   color: #fff;
   border-radius: 35px;
   padding: 0.25rlh 0.5rlh;
@@ -67,7 +68,7 @@ form {
   gap: 1rlh;
   padding: 1rlh;
   accent-color: rgb(255, 20, 20);
-  background-color: light-dark(#fff, #4e576a);
+  background-color: #fff;
   border-radius: 10px;
   font-family: "Inter", sans-serif;
 }
@@ -94,7 +95,7 @@ label:has(input) {
 }
 /* Hover-styles */
 button:hover {
-  background: rgb(42, 108, 48);
+  opacity: 0.8;
 }
 /* Active-styles (imens man klikker) */
 button:active {
@@ -165,7 +166,7 @@ textarea {
   }
 
   .link_grid li {
-    background-color: #8fa59a;
+    background-color: #8d9a92;
     border-radius: 999px;
   }
 
