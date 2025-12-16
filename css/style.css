@@ -36,6 +36,11 @@ main p {
   color: black;
 }
 
+.logo img {
+  max-width: 260px;
+  padding-top: 15px;
+}
+
 .herobilledeforside h1 {
   font-family: "Aperto SemiBold";
   color: #8d9a92;
