@@ -1,9 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-width: 100%;
 }
 
 h1 {
+  color: #899d94;
   text-align: center;
+  margin: 20px;
 }
 
 h2,
