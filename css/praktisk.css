@@ -13,8 +13,8 @@ h1 {
   margin: 20px;
 }
 
-h2,
-p {
+main h2,
+main p {
   color: #ffffff;
   text-align: center;
 }
