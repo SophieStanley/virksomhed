@@ -37,7 +37,7 @@ main p {
 }
 
 .logo img {
-  max-width: 260px;
+  max-width: 180px;
   padding-top: 15px;
 }
 
@@ -190,5 +190,10 @@ footer a {
 
   ul {
     list-style: none;
+  }
+
+  .logo img {
+    max-width: 260px;
+    padding-top: 15px;
   }
 }
