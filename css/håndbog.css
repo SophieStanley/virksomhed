@@ -9,7 +9,7 @@
   color: white;
 }
 
-img {
+.qa-image {
   max-width: 100%;
   height: auto;
   padding: 2rlh 0;
@@ -147,6 +147,10 @@ textarea {
   gap: 0.5rlh;
 }
 
+.link_grid {
+  padding-bottom: 40px;
+}
+
 @media (min-width: 900px) {
   /* CSS til store skærme */
 
@@ -161,6 +165,7 @@ textarea {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 2rem 0;
+    padding-bottom: 40px;
   }
 
   .link_grid ul {

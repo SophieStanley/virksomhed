@@ -196,4 +196,34 @@ footer a {
     max-width: 260px;
     padding-top: 15px;
   }
+
+  footer {
+    background-color: #ffffff; /* grøn/grå tone som i billedet */
+    color: #000000;
+    padding: 60px 40px 20px;
+    font-family: "Inter", sans-serif;
+  }
+
+  footer p,
+  footer li,
+  footer a {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.6;
+    text-decoration: none;
+  }
+  .footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+  }
+
+  .footer-top-wrapper {
+    padding-top: 40px;
+  }
 }
