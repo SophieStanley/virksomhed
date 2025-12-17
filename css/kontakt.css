@@ -9,10 +9,14 @@ img {
 
 h1 {
   text-align: center;
-  color: #899d94;
+  color: #000000;
   margin: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  padding-top: 40px;
 }
-div {
+main div {
   margin: 20px;
   text-align: center;
 }
@@ -26,23 +30,26 @@ div {
   max-width: 60%;
 }
 
+.kort {
+  padding: 50px;
+}
+
 @media (min-width: 800px) {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  div {
+  main div {
     grid-column: 1/2;
+    margin: 0px 20px;
+    padding: 0px 50px;
   }
   .indgangen {
     max-width: 90%;
     grid-column: 2/3;
     grid-row: 1/6;
   }
-  div {
-    margin: 0px 20px;
-    padding: 0px 50px;
-  }
+
   .kort {
     grid-column: 2/3;
   }

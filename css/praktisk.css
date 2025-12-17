@@ -11,10 +11,14 @@ h1 {
   color: #899d94;
   text-align: center;
   margin: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  padding: 20px;
+  padding-top: 40px;
 }
 
-h2,
-p {
+main h2,
+main p {
   color: #ffffff;
   text-align: center;
 }
@@ -26,10 +30,12 @@ p {
   background-color: #899d94;
   margin: 20px;
   padding: 20px;
+  border-radius: 30px;
 }
 
 .knap {
   text-align: center;
+  margin: 40px;
 }
 
 button {
@@ -38,6 +44,16 @@ button {
   border: 4px solid #899d94;
   margin: 20px;
   padding: 20px 30px;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: #c2cdc6;
+  color: #ffffff;
+}
+
+.cta {
+  font-weight: 200;
 }
 
 @media (min-width: 800px) {
